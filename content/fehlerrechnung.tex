@@ -1,0 +1,48 @@
+\newpage
+\section{Fehlerrechnung}
+\label{sec:fehlerrechnung}
+
+\subsection{Mittelwert}
+\label{subsec:mittelwert}
+  Im folgenden werden die Messwerte $x_i$ bei einer
+  Anzahl von $n$ Messungen betrachtet.\\
+  \\
+  Die Formel zur Berechnung des Mittelwertes ist:
+
+  \begin{equation}
+    \bar{x}=\frac{1}{n} \sum_{i=1}^n x_i \quad .
+    \label{eqn:mittelwert}
+  \end{equation}
+  \\\\
+  Die dazugehörige Standardabweichung lautet:
+
+  \begin{equation}
+    \sigma = \sqrt{\frac{1}{n-1} \sum_{i=1}^n (x_i - \overline{x})^2} \quad .
+    \label{eqn:std1}
+  \end{equation}
+  \\\\
+  Wenn nur Stichproben einer Messung ausgewertet werden,
+  wird die Standardabweichung angepasst zu:
+
+  \begin{equation}
+    \sigma_s = \sqrt{\frac{1}{n\,(n-1)} \sum_{i=1}^n (x_i - \overline{x})^2} \quad .
+    \label{eqn:std2}
+  \end{equation}
+  \\\\
+
+\subsection{Fehlerfortpflanzung}
+\label{subsec:fehlerfortplanzung}
+  Sind mehrere Messwerte durch eine Funktion $y=y(x_1, x_2, \dots, x_n)$ abhängig,
+  muss dies beachtet werden. \\\\
+  Der wahrscheinlichste Fehler ist der sogenannte Gauß'sche Fehler.
+  Für unabhängige $x_n$ ist dieser gegeben durch:\\
+
+  \begin{equation}
+    \increment y=\sqrt{
+    \left(\dfrac{\partial y}{\partial {x_1}}\cdot\increment x_1\right)^{\!2} +
+    \left(\dfrac{\partial y}{\partial {x_2}}\cdot\increment x_2\right)^{\!2}
+    +\,\dotsb\,+
+    \left(\dfrac{\partial y}{\partial {x_n}}\cdot\increment x_n\right)^{\!2}
+    }
+    \label{eqn:gaußfehler}
+  \end{equation}
