@@ -1,4 +1,30 @@
 \section{Theorie}
 \label{sec:Theorie}
-
-\cite{sample}
+Röntgenstrahlung ensteht durch Beschleunigte Elektronen, die auf ein Anodenmaterial
+treffen, welches, in Abhängigkeit der Energien der Elektronen, Röntgenstrahlung
+emittiert. Das Spektrum der Röntgenstrahlug besteht aus einem kontinuierlichen Bremsspektrum
+und für das Anodenmaterial, in diesem Fall Kupfer, charakteristische Peaks.
+Diese sind bei genau den Wellenlängen zu finden, die den Sprüngen zwischen den
+Elektronenbahnen entsprechen.\\
+Das Bremsspektrum entsteht durch die Abbremsung der Elektronen im Coulombfeld, daher ist
+dies ein kontinuierliches Spektrum mit der minimalen Wellenlänge
+\begin{equation}
+  \lambda_\symup{min} = \dfrac{hc}{e_\symup{0}U} \quad,
+  \label{eqn:lambda_min}\\
+\end{equation}
+die außerdem genau der Energie der beschleunigten Elektronen entspricht.\\
+Das charakteristische Spektrum entsteht durch Quantensprünge der Elektronen zwischen
+den Schalen der Kupfer Atome. Es gilt
+\begin{equation}
+  h \nu = E_\symup{m} - E_\symup{n}
+  \label{eqn:hnu}\\
+\end{equation}
+für die Energie der emittierten Photonen bei den Quantensprüngen, dabei ist $E_\symup{n}$ die
+Bindungsenergie des Elektron auf der n-ten Schale und gegeben durch
+\begin{equation}
+  E_\symup{n} = -R_\symup{\infty} z_\symup{eff}^2 \dfrac{1}{n^2}
+  \label{eqn:E_n}\\
+\end{equation}
+mit der Rydbergenergie $R_\symup{\infty} = \SI{13.6}{\electronvolt}$ und der effektiven
+Kernladungszahl $z_\symup{eff} = z - \sigma$, wobei $\sigma$ die Abschirmkonstante ist, welche
+in diesem Versuch empirisch bestimmt wird.
