@@ -43,7 +43,7 @@ $K_{\alpha/\beta}$ Winkel nicht genau getroffen wurde und somit die Maxima zu ni
 Mit der Gleichung ??? und ??? lässt sich die Abschirmkonstante $\sigma_L$ bestimmten.
 
 \begin{align*}
-  \sigma_L = 29
+  \sigma_L = \num{29.0}
 \end{align*}
 
 \subsection{Das Absorptionsspektrum}
@@ -51,23 +51,6 @@ Mit der Gleichung ??? und ??? lässt sich die Abschirmkonstante $\sigma_L$ besti
 In diesem Bereich wird die Abschirmzahl $\sigma_K$ aus dem Absorptionswinkel bestimmt.
 Der benötigte Winkel für die Bragg-Bedingung wird dem jeweiligen Graph der Absorptionskurve
 entnommen. \\
-Der Winkel für den Bromabsorber beträgt
-
-\begin{align*}
-  \theta_\symup{Br,K} = \SI{13.2}{\degree}.
-\end{align*}
-
-Daraus ergibt sich mit Gleichung ???(E=hv) und ???(Bragg) die Energie
-
-\begin{align*}
-  E_\symup{Br,K} = \SI{13.49}{\kilo\eV}.
-\end{align*}
-
-Unter Ausnutzung der Gleichung ??? errechnet sich die Abschirmzahl zu
-
-\begin{align*}
-  \sigma_\symup{Br,K} = .
-\end{align*}
 
 \begin{figure}[H]
   \centering
@@ -76,10 +59,26 @@ Unter Ausnutzung der Gleichung ??? errechnet sich die Abschirmzahl zu
   \label{fig:plot_br}
 \end{figure}
 
+Der Winkel für die K-Kante bei dem Bromabsorber \eqref{fig:plot_br} liegt bei
+\begin{align*}
+  \theta_\symup{K,Br} = \SI{13.2}{\degree}.
+\end{align*}
+
+Daraus ergibt sich mit Gleichung ???(E=hv) und ???(Bragg) die Energie
+\begin{align*}
+  E_\symup{K,Br} = \SI{13.49}{\kilo\eV}.
+\end{align*}
+
+Unter Ausnutzung der Gleichung ???(K-alpha), in welcher $\sigma_2 = 0$ ist, da es sich um
+die K-Schale handelt, errechnet sich die Abschirmzahl zu
+\begin{align*}
+  \sigma_\symup{K,Br} = .
+\end{align*}
+
 \begin{figure}[H]
   \centering
   \includegraphics{plot_abs_sr.pdf}
-  \caption{Absorptionsspektrum mit einem Strontiumbsorber.}
+  \caption{Absorptionsspektrum mit einem Strontiumabsorber.}
   \label{fig:plot_sr}
 \end{figure}
 
@@ -90,9 +89,36 @@ Unter Ausnutzung der Gleichung ??? errechnet sich die Abschirmzahl zu
   \label{fig:plot_zr}
 \end{figure}
 
+Analog werden die Abschirmzahlen für einen Strontiumabsorber \eqref{fig:plot_sr} und einen
+Zirkoniumabsorber \eqref{fig:plot_zr} berechnet.
+
+\begin{align*}
+  \theta_\symup{K,Sr} &= \SI{11.3}{\degree}\\
+  E_\symup{K,Sr} &= \SI{15.72}{\kilo\eV}\\
+  \sigma_\symup{K,Sr} &=\\
+\end{align*}
+\begin{align*}
+  \theta_\symup{K,Zr} &= \SI{10.4}{\degree}\\
+  E_\symup{K,Zr} &= \SI{17.06}{\kilo\eV}\\
+  \sigma_\symup{K,Zr} &=\\
+\end{align*}
+
+
 \begin{figure}[H]
   \centering
   \includegraphics{plot_abs_hg.pdf}
   \caption{Absorptionsspektrum mit einem Quecksilberabsorber.}
   \label{fig:plot_hg}
 \end{figure}
+
+Die Abschirmkonstante für das Quecksilber wird auf eine andere Weise bestimmt. Zunächst
+werden die $L_{II}$ und $L_{III}$ Kanten aus den Messwerten \eqref{fig:plot_hg} bestimmt.
+Diese werden mithilfe der Gleichung ???(E mit Bragg) in eine Energie überführt und danach
+mit Gleichung ???(sigma-L) in die Abschirmzahl überführt.
+
+\begin{align*}
+  L_{II} &= \SI{7.6}{\degree}\\
+  L_{III}&= \SI{8.3}{\degree}\\
+  \Delta E &= E_{L_{III}}-E_{L_{III}} = \SI{1.95}{\kilo\eV}\\\\
+  \Rightarrow \sigma_\symup{L,Hg} &= \num{3.34}\\
+\end{align*}
