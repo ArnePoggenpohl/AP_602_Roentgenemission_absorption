@@ -27,4 +27,52 @@ Bindungsenergie des Elektron auf der n-ten Schale und gegeben durch
 \end{equation}
 mit der Rydbergenergie $R_\symup{\infty} = \SI{13.6}{\electronvolt}$ und der effektiven
 Kernladungszahl $z_\symup{eff} = z - \sigma$, wobei $\sigma$ die Abschirmkonstante ist, welche
-in diesem Versuch empirisch bestimmt wird.
+in diesem Versuch empirisch bestimmt wird.\\\\
+Die charakteristischen Peaks der Röntgenstrahlung werden $K_\symup{\alpha},K_\symup{\beta},
+L_\symup{\alpha}\dots$ Linien genannt, dabei steht das $K$ für die jeweilige Schale, auf der die Übergänge
+enden, und das $\symup{\alpha}$ für die Schale von der das Elektron stammt. Die Energie
+der $K_\symup{\alpha}$ Linie ist dann gegeben durch:
+\begin{equation}
+  E_{K_\symup{\alpha}} = R_\symup{\infty} \left(z - \sigma_\symup{1} \right)\dfrac{1}{1^2} -
+  R_\symup{\infty}\left(z - \sigma_\symup{2}\right) \dfrac{1}{2^2}
+  \label{eqn:E_K_a}\\
+\end{equation}
+\newpage
+Der zweite Teil des Versuchs beschäftigt sich mit der Absorbtion von Röntgenstrahlung durch
+verschiedene Materialien. Dabei spielen vor allem der Compton- und der Photoeffekt eine
+tragende Rolle für Energien unter $\SI{1}{\mega\electronvolt}$.\\
+Das Absorbtionskoeffizient fällt mit zunehmender Energie ab springt jedoch immer dann
+auf ein höheres niveau, wenn die Energien gerade größer sind als die Bindungsenergie der
+nächsten inneren Schale. Die Absorbtionskanten $h\nu_\symup{abs} = E_\symup{n} - E_\symup{\infty}$
+liegen nahezu bei den Bindungsenergien der Elektronen. Es kann jeweils nur eine $K$ -Kante
+beobachtet werden, aufgrund der sogennannten Feinstruktur jedoch drei $L$ -Kanten,
+welche als $L_\symup{I},L_\symup{II} \text{ und } L_\symup{III}$
+bezeichnet werden. Unter Berücksichtigung der Feinstruktur kann mithilfer der
+Sommerfeldschen Feinstrukturformel die Bindungsenergie $E_\symup{n,j}$ der Elektronen
+berechnet werden.
+\begin{equation}
+  E_\symup{n,j} = -R_\symup{\infty} \left(z_\symup{eff,1}^2 \cdot \dfrac{1}{n^2}
+  + \alpha^2 z_\symup{eff,2}^4 \cdot \dfrac{1}{n^3}\left(\dfrac{1}{j+\frac{1}{2}}-
+  \dfrac{3}{4n}\right)\right)
+  \label{eqn:E_n,j}\\
+\end{equation}
+Dabei ist $\alpha$ die Sommerfeldsche Feinstrukturkonstante, $n$ die Hauptquantenzahl und
+$j$ der Gesamtdrehimpuls des betrachteten Elektrons. Da die Abschirmkonstante $\sigma_\symup{L}$
+kompliziert zu bestimmen ist, wird im Versuch eine Vereinfachung zur Hilfe genommen,
+bei der die Energiedifferenz der $L_\symup{II}$ und $L_\symup{III}$ -Linien betrachtet wird.
+\begin{equation}
+  \sigma_\symup{L} = Z - \left(\dfrac{4}{\alpha}\sqrt{\dfrac{\symup{\Delta} E_\symup{L}}{R_\symup{\infty}}}
+  - \dfrac{5 \symup{\Delta} E_\symup{L} }{R_\symup{\infty}} \right)^{\sfrac{1}{2}}
+  \left(1 + \dfrac{19}{32} \alpha^2 \dfrac{\symup{\Delta} E_\symup{L}}{R_\symup{\infty}} \right)^{\sfrac{1}{2}}
+  \label{eqn:sigma_L}\\
+\end{equation}
+Dabei ist $Z$ die Ordnungszahl und $\symup{\Delta} E_\symup{L} = E_{L_\symup{II}} -E_{L_\symup{III}}$.\\
+Im Versuch werden die Spektren jemeils mithilfe der Bragg-Reflektion aufgenommen. Mithilfe
+der Gragg-Bedingung
+\begin{equation}
+  2 d \sin{\Theta} = n \lambda
+  \label{eqn:bragg}\\
+\end{equation}
+lassen sich die gemessen Winkel den zughörigen Wellenlängen zuordnen. Dabei ist $d$ die
+Gitterkonstante. In diesem Fall ist $d = \SI{201.4}{\pico\meter}$ für den hier verwendeten
+$LiF$ -Kristall.\\
