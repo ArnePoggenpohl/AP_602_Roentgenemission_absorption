@@ -1,8 +1,8 @@
 \section{Theorie}
 \label{sec:Theorie}
-Röntgenstrahlung ensteht durch Beschleunigte Elektronen, die auf ein Anodenmaterial
-treffen, welches, in Abhängigkeit der Energien der Elektronen, Röntgenstrahlung
-emittiert. Das Spektrum der Röntgenstrahlug besteht aus einem kontinuierlichen Bremsspektrum
+Röntgenstrahlung ensteht durch beschleunigte Elektronen, die auf ein Anodenmaterial
+treffen, welches in Abhängigkeit der Energien der Elektronen Röntgenstrahlung
+emittiert. Das Spektrum der Röntgenstrahlung besteht aus einem kontinuierlichen Bremsspektrum
 und für das Anodenmaterial, in diesem Fall Kupfer, charakteristische Peaks.
 Diese sind bei genau den Wellenlängen zu finden, die den Sprüngen zwischen den
 Elektronenbahnen entsprechen.\\
@@ -14,7 +14,7 @@ dies ein kontinuierliches Spektrum mit der minimalen Wellenlänge
 \end{equation}
 die außerdem genau der Energie der beschleunigten Elektronen entspricht.\\
 Das charakteristische Spektrum entsteht durch Quantensprünge der Elektronen zwischen
-den Schalen der Kupfer Atome. Es gilt
+den Schalen der Kupferatome. Es gilt
 \begin{equation}
   h \nu = E_\symup{m} - E_\symup{n}
   \label{eqn:hnu}\\
@@ -29,8 +29,8 @@ mit der Rydbergenergie $R_\symup{\infty} = \SI{13.6}{\electronvolt}$ und der eff
 Kernladungszahl $z_\symup{eff} = z - \sigma$, wobei $\sigma$ die Abschirmkonstante ist, welche
 in diesem Versuch empirisch bestimmt wird.\\\\
 Die charakteristischen Peaks der Röntgenstrahlung werden $K_\symup{\alpha},K_\symup{\beta},
-L_\symup{\alpha}\dots$ Linien genannt, dabei steht das $K$ für die jeweilige Schale, auf der die Übergänge
-enden, und das $\symup{\alpha}$ für die Schale von der das Elektron stammt. Die Energie
+L_\symup{\alpha}\dots$ Linien genannt, dabei steht das $K$ für die jeweilige Schale auf der die Übergänge
+enden und das $\symup{\alpha}$ für die Schale von der das Elektron stammt. Die Energie
 der $K_\symup{\alpha}$ Linie ist dann gegeben durch:
 \begin{equation}
   E_{K_\symup{\alpha}} = R_\symup{\infty} \left(z - \sigma_\symup{1} \right)\dfrac{1}{1^2} -
@@ -38,12 +38,12 @@ der $K_\symup{\alpha}$ Linie ist dann gegeben durch:
   \label{eqn:E_K_a}\\
 \end{equation}
 \newpage
-Der zweite Teil des Versuchs beschäftigt sich mit der Absorbtion von Röntgenstrahlung durch
+Der zweite Teil des Versuchs beschäftigt sich mit der Absorption von Röntgenstrahlung durch
 verschiedene Materialien. Dabei spielen vor allem der Compton- und der Photoeffekt eine
 tragende Rolle für Energien unter $\SI{1}{\mega\electronvolt}$.\\
-Das Absorbtionskoeffizient fällt mit zunehmender Energie ab springt jedoch immer dann
-auf ein höheres niveau, wenn die Energien gerade größer sind als die Bindungsenergie der
-nächsten inneren Schale. Die Absorbtionskanten $h\nu_\symup{abs} = E_\symup{n} - E_\symup{\infty}$
+Der Absorptionskoeffizient fällt mit zunehmender Energie ab springt jedoch immer dann
+auf ein höheres Niveau, wenn die Energien gerade größer sind als die Bindungsenergie der
+nächsten inneren Schale. Die Absorptionskanten $h\nu_\symup{abs} = E_\symup{n} - E_\symup{\infty}$
 liegen nahezu bei den Bindungsenergien der Elektronen. Es kann jeweils nur eine $K$ -Kante
 beobachtet werden, aufgrund der sogennannten Feinstruktur jedoch drei $L$ -Kanten,
 welche als $L_\symup{I},L_\symup{II} \text{ und } L_\symup{III}$
@@ -67,12 +67,20 @@ bei der die Energiedifferenz der $L_\symup{II}$ und $L_\symup{III}$ -Linien betr
   \label{eqn:sigma_L}\\
 \end{equation}
 Dabei ist $Z$ die Ordnungszahl und $\symup{\Delta} E_\symup{L} = E_{L_\symup{II}} -E_{L_\symup{III}}$.\\
-Im Versuch werden die Spektren jemeils mithilfe der Bragg-Reflektion aufgenommen. Mithilfe
-der Gragg-Bedingung
+Im Versuch werden die Spektren jeweils mithilfe der Bragg-Reflektion aufgenommen. Mithilfe
+der Bragg-Bedingung
+
 \begin{equation}
   2 d \sin{\Theta} = n \lambda
-  \label{eqn:bragg}\\
+  \label{eqn:bragg}
 \end{equation}
+
 lassen sich die gemessen Winkel den zughörigen Wellenlängen zuordnen. Dabei ist $d$ die
 Gitterkonstante. In diesem Fall ist $d = \SI{201.4}{\pico\meter}$ für den hier verwendeten
-$LiF$ -Kristall.\\
+$LiF$ -Kristall. Über den Zusammenhang $E=h\nu$ lässt sich diese Wellenlänge in eine
+Energie umwandeln.
+
+\begin{equation}
+  E = \dfrac{hc}{2d\sin{\Theta}}
+  \label{eqn:E}
+\end{equation}
