@@ -40,10 +40,19 @@ $K_\alpha$ Linie $\SI{0.7}{\degree}$. Da die Abtastrate in $\SI{0.2}{\degree}$-S
 ist, sind diese Angaben ungenau. Durch die groben Schritte ist es möglich, dass der
 $K_{\alpha/\beta}$ Winkel nicht genau getroffen wurde und somit die Maxima zu niedrig sind. \\
 
-Mit der Gleichung ??? und ??? lässt sich die Abschirmkonstante $\sigma_L$ bestimmten.
+Mit der Gleichung \eqref{eqn:E} lassen sich die Energien für die $K_\alpha$ und $K_\beta$
+Winkel bestimmen.
 
 \begin{align*}
-  \sigma_L = \num{29.0}
+  E_\alpha = \SI{8.08}{\kilo\eV}\\
+  E_\beta = \SI{9.01}{\kilo\eV}\\
+\end{align*}
+
+Aus der Energiedifferenz wird mit der Gleichung \eqref{eqn:E_n} die Abschirmkonstante
+$\sigma_K$ bestimmten.
+
+\begin{align*}
+  \sigma_K = \num{20.73}
 \end{align*}
 
 \subsection{Das Absorptionsspektrum}
@@ -64,15 +73,14 @@ Der Winkel für die K-Kante bei dem Bromabsorber \eqref{fig:plot_br} liegt bei
   \theta_\symup{K,Br} = \SI{13.2}{\degree}.
 \end{align*}
 
-Daraus ergibt sich mit Gleichung ???(E=hv) und ???(Bragg) die Energie
+Daraus ergibt sich mit Gleichung \eqref{eqn:E} die Energie
 \begin{align*}
   E_\symup{K,Br} = \SI{13.49}{\kilo\eV}.
 \end{align*}
 
-Unter Ausnutzung der Gleichung ???(K-alpha), in welcher $\sigma_2 = 0$ ist, da es sich um
-die K-Schale handelt, errechnet sich die Abschirmzahl zu
+Unter Ausnutzung der Gleichung \eqref{eqn:E_n} errechnet sich die Abschirmzahl zu
 \begin{align*}
-  \sigma_\symup{K,Br} = .
+  \sigma_\symup{K,Br} = \num{2.98} .
 \end{align*}
 
 \begin{figure}[H]
@@ -95,12 +103,12 @@ Zirkoniumabsorber \eqref{fig:plot_zr} berechnet.
 \begin{align*}
   \theta_\symup{K,Sr} &= \SI{11.3}{\degree}\\
   E_\symup{K,Sr} &= \SI{15.72}{\kilo\eV}\\
-  \sigma_\symup{K,Sr} &=\\
+  \sigma_\symup{K,Sr} &= \num{4.00}\\
 \end{align*}
 \begin{align*}
   \theta_\symup{K,Zr} &= \SI{10.4}{\degree}\\
   E_\symup{K,Zr} &= \SI{17.06}{\kilo\eV}\\
-  \sigma_\symup{K,Zr} &=\\
+  \sigma_\symup{K,Zr} &=\num{4.58}\\
 \end{align*}
 
 
