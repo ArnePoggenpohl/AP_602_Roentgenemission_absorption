@@ -13,7 +13,7 @@ plt.plot(x, y, 'r-', linewidth=1, label='Messdaten')
 
 plt.grid()
 
-plt.ylabel(r'$\frac{\text{Impulse}}{\text{Sekunde}} \,/\, \frac{1}{s}$', fontsize=10)
+plt.ylabel(r'$\text{Impulse} \,/\, \frac{1}{s}$', fontsize=10)
 plt.xlabel(r'Zählrohrwinkel $2 \theta \,/\, \si{\degree}$', fontsize=10)
 
 plt.legend(loc='best')

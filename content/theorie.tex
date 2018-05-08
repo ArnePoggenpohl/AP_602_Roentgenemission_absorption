@@ -1,6 +1,6 @@
 \section{Theorie}
 \label{sec:Theorie}
-Röntgenstrahlung ensteht durch beschleunigte Elektronen, die auf ein Anodenmaterial
+Röntgenstrahlung ensteht durch abgebremste Elektronen, die auf ein Anodenmaterial
 treffen, welches in Abhängigkeit der Energien der Elektronen Röntgenstrahlung
 emittiert. Das Spektrum der Röntgenstrahlung besteht aus einem kontinuierlichen Bremsspektrum
 und für das Anodenmaterial, in diesem Fall Kupfer, charakteristische Peaks.
@@ -12,7 +12,7 @@ dies ein kontinuierliches Spektrum mit der minimalen Wellenlänge
   \lambda_\symup{min} = \dfrac{hc}{e_\symup{0}U} \quad,
   \label{eqn:lambda_min}\\
 \end{equation}
-die außerdem genau der Energie der beschleunigten Elektronen entspricht.\\
+die genau der Energie der beschleunigten Elektronen entspricht.\\
 Das charakteristische Spektrum entsteht durch Quantensprünge der Elektronen zwischen
 den Schalen der Kupferatome. Es gilt
 \begin{equation}
@@ -32,11 +32,16 @@ Die charakteristischen Peaks der Röntgenstrahlung werden $K_\symup{\alpha},K_\s
 L_\symup{\alpha}\dots$ Linien genannt, dabei steht das $K$ für die jeweilige Schale auf der die Übergänge
 enden und das $\symup{\alpha}$ für die Schale von der das Elektron stammt. Die Energie
 der $K_\symup{\alpha}$ Linie ist dann gegeben durch:
-\begin{equation}
-  E_{K_\symup{\alpha}} = R_\symup{\infty} \left(z - \sigma_\symup{1} \right)\dfrac{1}{1^2} -
-  R_\symup{\infty}\left(z - \sigma_\symup{2}\right) \dfrac{1}{2^2}
-  \label{eqn:E_K_a}\\
-\end{equation}
+\begin{align}
+  E_{K_\symup{\alpha}} = R_\symup{\infty} \left(z - \sigma_\symup{1} \right)^2\dfrac{1}{1^2} -
+  R_\symup{\infty}\left(z - \sigma_\symup{2}\right)^2 \dfrac{1}{2^2}
+  \label{eqn:E_K_a}
+\end{align}
+\begin{align}
+  E_{K_\symup{\beta}} = R_\symup{\infty} \left(z - \sigma_\symup{1} \right)^2\dfrac{1}{1^2} -
+  R_\symup{\infty}\left(z - \sigma_\symup{3}\right)^2 \dfrac{1}{3^2}
+  \label{eqn:E_K_b}
+\end{align}
 \newpage
 Der zweite Teil des Versuchs beschäftigt sich mit der Absorption von Röntgenstrahlung durch
 verschiedene Materialien. Dabei spielen vor allem der Compton- und der Photoeffekt eine
@@ -78,7 +83,7 @@ der Bragg-Bedingung
 lassen sich die gemessen Winkel den zughörigen Wellenlängen zuordnen. Dabei ist $d$ die
 Gitterkonstante. In diesem Fall ist $d = \SI{201.4}{\pico\meter}$ für den hier verwendeten
 $LiF$ -Kristall. Über den Zusammenhang $E=h\nu$ lässt sich diese Wellenlänge in eine
-Energie umwandeln.
+Energie umrechnen.
 
 \begin{equation}
   E = \dfrac{hc}{2d\sin{\Theta}}

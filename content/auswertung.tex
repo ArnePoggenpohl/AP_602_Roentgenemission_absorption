@@ -35,10 +35,8 @@ im Bereich von $\SI{4}{\degree}$ bis $\SI{26}{\degree}$ gemessen.
 
 Die $K_\beta$ Linie liegt bei $\SI{20.1}{\degree}$ und die $K_\alpha$ Linie liegt bei $\SI{22.3}{\degree}$.
 Anhand der Messdaten wird die Halbwertsbreite der $K_\alpha$ und $K_\beta$ Linie bestimmt. \\
-Für die $K_\beta$ Linie beträgt die Halbwertsbreite $\SI{0.8}{\degree}$ und für die
-$K_\alpha$ Linie $\SI{0.7}{\degree}$. Da die Abtastrate in $\SI{0.2}{\degree}$-Schritten erfolgt
-ist, sind diese Angaben ungenau. Durch die groben Schritte ist es möglich, dass der
-$K_{\alpha/\beta}$ Winkel nicht genau getroffen wurde und somit die Maxima zu niedrig sind. \\
+Für die $K_\beta$ Linie beträgt die Halbwertsbreite $\SI{0.4}{\degree}$ und für die
+$K_\alpha$ Linie $\SI{0.35}{\degree}$.\\
 
 Mit der Gleichung \eqref{eqn:E} lassen sich die Energien für die $K_\alpha$ und $K_\beta$
 Winkel bestimmen.
@@ -48,11 +46,14 @@ Winkel bestimmen.
   E_\beta &= \SI{9.01}{\kilo\eV}\\
 \end{align*}
 
-Aus der Energiedifferenz wird mit der Gleichung \eqref{eqn:E_n} die Abschirmkonstante
-$\sigma_K$ bestimmten.
+Mit den Gleichungen \eqref{eqn:E_n}, \eqref{eqn:E_K_a} und
+\eqref{eqn:E_K_b} werden die Abschirmkonstanten $\sigma_\symup{1}, \sigma_\symup{2}$ und
+$\sigma_\symup{3}$ berechnet.
 
 \begin{align*}
-  \sigma_K = \num{20.73}
+  \sigma_\symup{1} &= \num{3.26} \\
+  \sigma_\symup{2} &= \num{} \\
+  \sigma_\symup{3} &= \num{}
 \end{align*}
 
 \subsection{Das Absorptionsspektrum}
@@ -80,7 +81,7 @@ Daraus ergibt sich mit Gleichung \eqref{eqn:E} die Energie
 
 Unter Ausnutzung der Gleichung \eqref{eqn:E_n} errechnet sich die Abschirmzahl zu
 \begin{align*}
-  \sigma_\symup{K,Br} = \num{2.98} .
+  \sigma_\symup{K,Br} = \num{3.51} .
 \end{align*}
 
 \begin{figure}[H]
@@ -121,12 +122,12 @@ Zirkoniumabsorber \eqref{fig:plot_zr} berechnet.
 
 Die Abschirmkonstante für das Quecksilber wird auf eine andere Weise bestimmt. Zunächst
 werden die $L_{II}$ und $L_{III}$ Kanten aus den Messwerten \eqref{fig:plot_hg} bestimmt.
-Diese werden mithilfe der Gleichung \eqref{eqn:E} in eine Energie überführt und danach
+Diese werden mithilfe der Gleichung \eqref{eqn:E} in eine Energie und danach
 mit Gleichung \eqref{eqn:sigma_L} in die Abschirmzahl überführt.
 
 \begin{align*}
-  L_{II} &= \SI{7.6}{\degree}\\
-  L_{III}&= \SI{8.3}{\degree}\\
-  \Delta E &= E_{L_{III}}-E_{L_{III}} = \SI{1.95}{\kilo\eV}\\\\
-  \Rightarrow \sigma_\symup{L,Hg} &= \num{3.34}\\
+  L_{II} &= \SI{12.4}{\degree}\\
+  L_{III}&= \SI{14.7}{\degree}\\
+  \Delta E &= E_{L_{II}}-E_{L_{III}} = \SI{2.21}{\kilo\eV}\\\\
+  \Rightarrow \sigma_\symup{L,Hg} &= \num{1.25}\\
 \end{align*}
