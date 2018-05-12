@@ -48,7 +48,41 @@ Winkel bestimmen.
 
 Mit den Gleichungen \eqref{eqn:E_n}, \eqref{eqn:E_K_a} und
 \eqref{eqn:E_K_b} werden die Abschirmkonstanten $\sigma_\symup{1}, \sigma_\symup{2}$ und
-$\sigma_\symup{3}$ berechnet.
+$\sigma_\symup{3}$ berechnet. \\\\
+
+Aus Gleichung \eqref{eqn:E_n} mit $E_\symup{n} = E_\symup{\beta}$ und \eqref{eqn:E_K_a}
+folgt:
+
+\begin{align*}
+    E_\symup{\beta} &= -R_\symup{\infty} z_\symup{eff}^2 \dfrac{1}{n^2} \qquad | \quad n=1\\
+    \Leftrightarrow \quad -\dfrac{E_\symup{\beta}}{R} &= (z - \sigma_{1})^2 \\
+    \Leftrightarrow \quad \sigma_1 &= z-\sqrt{-\dfrac{E_\symup{\beta}}{R}}\\
+    \sigma_1 \text{ in }\quad E_\symup{\alpha/\beta}
+    &= R_\symup{\infty} \left(z - \sigma_{1} \right)^2\dfrac{1}{1^2} -
+    R_\symup{\infty}\left(z - \sigma_{2/3}\right)^2 \dfrac{1}{n^2} \\
+    \text{bei}\quad\sigma_2 \rightarrow n = 2,\, E_\symup{\alpha/\beta} = E_\symup{\alpha}&
+    \quad\text{und bei}\quad\sigma_3 \rightarrow n = 3,\, E_\symup{\alpha/\beta}
+    = E_\symup{\beta}\\
+    \Rightarrow \quad E_\symup{\alpha/\beta} &= R\left(z-\left(z-\sqrt{-\dfrac{E_\symup{\beta}}
+    {R}}\right)\right)^2-R\left(z - \sigma_{2/3}\right)^2 \dfrac{1}{n^2}\\
+    \Leftrightarrow \quad E_\symup{\alpha/\beta} &= R\left(\sqrt{-\dfrac
+    {E_\symup{\beta}}{R}}\right)^2-R\left(z - \sigma_{2/3}\right)^2 \dfrac{1}{n^2}\\
+    \Leftrightarrow \quad E_\symup{\alpha/\beta} &=-R\dfrac
+    {E_\symup{\beta}}{R}-R\left(z - \sigma_{2/3}\right)^2 \dfrac{1}{n^2}\\
+    \Leftrightarrow \quad E_\symup{\alpha/\beta}+E_\symup{\beta} &=
+    -R\left(z - \sigma_{2/3}\right)^2 \dfrac{1}{n^2}\\
+    \Leftrightarrow \quad \dfrac{-n^2\left(E_\symup{\alpha/\beta}+E_\symup{\beta}\right)}
+    {R} &=\left(z - \sigma_{2/3}\right)^2\\
+    \Leftrightarrow \quad \sigma_{2/3} &=z- \sqrt{-\dfrac{n^2\left(E_\symup
+    {\alpha/\beta}+E_\symup{\beta}\right)}{R}}\\
+    \text{(Energien negativ) liefert:}\quad \sigma_2&=\num{-41.9} \quad \text{und}\quad
+    \sigma_3=\num{-80.2}\\\\
+    \text{lässt man oben das "-" weg, ergibt sich:}&\\
+    \Rightarrow \quad \sigma_{2/3} &=z- \sqrt{\dfrac{n^2\left(E_\symup
+    {\beta}-E_\symup{\alpha/\beta}\right)}{R}}\\
+    \text{(Energien positiv) liefert:}\quad \sigma_2&=\num{12.5} \quad \text{und}\quad
+    \sigma_3=\num{29}\\
+\end{align*}
 
 \begin{align*}
   \sigma_\symup{1} &= \num{3.26} \\
@@ -121,7 +155,7 @@ Zirkoniumabsorber \eqref{fig:plot_zr} berechnet.
 \end{figure}
 
 Die Abschirmkonstante für das Quecksilber wird auf eine andere Weise bestimmt. Zunächst
-werden die $L_{II}$ und $L_{III}$ Kanten aus den Messwerten \eqref{fig:plot_hg} bestimmt.
+werden die $L_{II}$ und $L_{III}$ Kanten aus den Messwerten mit \eqref{fig:plot_hg} bestimmt.
 Diese werden mithilfe der Gleichung \eqref{eqn:E} in eine Energie und danach
 mit Gleichung \eqref{eqn:sigma_L} in die Abschirmzahl überführt.
 
@@ -130,4 +164,28 @@ mit Gleichung \eqref{eqn:sigma_L} in die Abschirmzahl überführt.
   L_{III}&= \SI{14.7}{\degree}\\
   \Delta E &= E_{L_{II}}-E_{L_{III}} = \SI{2.21}{\kilo\eV}\\\\
   \Rightarrow \sigma_\symup{L,Hg} &= \num{1.25}\\
+\end{align*}
+
+
+\subsection{Bestimmung der Rydbergkonstante}
+
+Nun wird aus den bereits ermittelten Werten die Rydbergkonstante über das Moseleysche-Gesetz
+bestimmt. Nach diesem Gesetz ist die Absorptionsenergie $E_\symup{K}$ proportional zur
+quadratischen Kernladung $Z^2$. Für die Bestimmung wird ein $\sqrt{E_\symup{K}}-Z$ Diagramm
+erstellt, welches in Abbildung \eqref{fig:rydberg} zu sehen ist. Die Steigung der Geraden
+wird mit einer linearen Ausgleichsrechnung bestimmt und entspricht der Rydbergkonstante.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot_rydberg.pdf}
+  \caption{Graph zur Rydbergkonstante.}
+  \label{fig:rydberg}
+\end{figure}
+
+Die Regression liefert die Werte:
+\begin{align*}
+  y &= Ax+B\\\\
+  A &= \num{2.91(13)}\\
+  B &= \num{14.5(47)}\\\\
+  \Rightarrow R &= \SI{2.91(13)}{\eV}
 \end{align*}

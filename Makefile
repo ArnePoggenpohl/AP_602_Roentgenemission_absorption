@@ -24,10 +24,11 @@ build/plot_abs_sr.pdf: plot_abs_sr.py matplotlibrc header-matplotlib.tex | build
 	TEXINPUTS="$(call translate,$(pwd):)" python plot_abs_sr.py
 build/plot_abs_zr.pdf: plot_abs_zr.py matplotlibrc header-matplotlib.tex | build
 	TEXINPUTS="$(call translate,$(pwd):)" python plot_abs_zr.py
-
+build/plot_rydberg.pdf: plot_rydberg.py matplotlibrc header-matplotlib.tex | build
+	TEXINPUTS="$(call translate,$(pwd):)" python plot_rydberg.py
 
 # hier weitere Abhängigkeiten für build/main.pdf deklarieren:
-build/main.pdf: build/plot_emission.pdf
+build/main.pdf: build/plot_emission.pdf build/plot_rydberg.pdf
 build/main.pdf: build/plot_bragg.pdf
 build/main.pdf: build/plot_abs_br.pdf
 build/main.pdf: build/plot_abs_sr.pdf

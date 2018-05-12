@@ -2,10 +2,10 @@
 \label{sec:Diskussion}
 
 Für den ersten Versuchsteil lässt sich erkennen, dass das Maximum des Spektrums
-bei $\Theta = \SI{28.2}{\degree}$ leigt. Dieser Wert war zu erwarten und anhand der
+bei $2 \Theta = \SI{28.2}{\degree}$ leigt. Dieser Wert war zu erwarten und anhand der
 Messkurve lässt sich außerdem die Bragg-Bedingung bestätigen.\\
 Der zweite Versuchsteil lieferte folgende Ergebnisse für die $K_\symup{\alpha}$ und
-die $K_\symup{\beta}$ Linien:\\
+die $K_\symup{\beta}$ Linien. Die Literaturwerte stammen von der Website \cite{alpha}.\\
 \begin{align*}
   E_\alpha &= \SI{8.08}{\kilo\eV}\\
   E_{\alpha,\symup{Lit}} &= \SI{8.053}{\kilo\eV}\\
@@ -14,9 +14,11 @@ die $K_\symup{\beta}$ Linien:\\
   E_{\beta,\symup{Lit}} &= \SI{8.912}{\kilo\eV}\\
   \text{Abweichung} &= \SI{1.1}{\percent}\\
 \end{align*}
-Daraus wurde die Abschirmkonstante
+Daraus wurden die Abschirmkonstanten
 \begin{align*}
-  \sigma_K = \num{20.73}
+  \sigma_1 &= \num{20.73}\\
+  \sigma_2 &= \num{}\\
+  \sigma_3 &= \num{}\\
 \end{align*}
 berechnet, welche im Vergleich zu den später errechneten Werten deutlich höher ist. Die
 Halbwertsbreite der $K_\beta$ Linie beträgt $\SI{0.4}{\degree}$ und die der
@@ -28,15 +30,33 @@ Auch die Ergebnisse für diesen Versuchsteil liegen in den erwarteten Bereichen,
 was für eine saubere Messung spricht.\\
 Für den letzten Versuchsteil erwies sich die Auswertung als sehr umständlich, da
 das erkennen der $K$ und $L$ -Linien in den Graphen nicht genau möglich war. Deswegen
-ist auch eine Beurteilung der Ergebnisse sehr schwierig. Für die einzelnen
+ist auch eine Beurteilung der Ergebnisse schwierig. Für die einzelnen
 Elemente Brom, Strontium, Zirkonium und Quecksilber ergaben sich folgende
-Abschirmzahlen:
-\begin{align*}
-  \sigma_\symup{K,Br} &= \num{2.98}\\
-  \sigma_\symup{K,Sr} &= \num{4.00}\\
-  \sigma_\symup{K,Zr} &= \num{4.58}\\
-  \sigma_\symup{L,Hg} &= \num{3.34}\\
-\end{align*}
+Abschirmzahlen. Die Literaturwerte kommen von der Seite \cite{k_edge}.
 
+\begin{table}[H]
+  \centering
+  \caption{Abschirmzahlen im Vergleich zum Literaturwert.}
+    \begin{tabular}{c c c c}
+    \toprule
+    Element & $\sigma$ & $\sigma_\symup{Lit}$ & Abweichung\\
+    \midrule
+    Brom & 3,51 & 3,52 & -0,3\% \\
+    Strontium & 4,00 & 3,59 & +10,3\% \\
+    Zirkonium & 4,58 & 3,62 & +21,0\% \\
+    Quecksilber & 3,34 & 3.58 & -7,2\% \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:sigma_lit}
+\end{table}
+
+Die Berechnung der Rydbergkonstante lieferte den Wert:
+\begin{align*}
+  R = \SI{2.91(13)}{\eV}
+\end{align*}
+Dieser Wert ist ca. $\num{4.5}$-mal kleiner als der in der Versuchanleitung angegebener
+Wert. Dies ist auch schon daran zu erkennen, dass die Abweichung der $\sigma_\symup{K}$'s
+von Brom bis zum Zirkonium immer weiter ins positive Ansteigen. Wenn sie das nicht tun
+würden, dann wäre die Rydbergkonstante auch größer.
 \nocite{sample}
 \nocite{alpha}
